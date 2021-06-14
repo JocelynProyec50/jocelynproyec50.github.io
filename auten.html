@@ -71,7 +71,7 @@
       /** Termina la sesión. */
       async function terminaSesión(){
         try {
-        await auth.signOut(); document.location="./index.html";
+        await auth.signOut(); document.location.href="./index.html";
       } catch (e) {
         procesaError (e);
       }
