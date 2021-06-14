@@ -118,11 +118,10 @@ header .textos-header{
     cursor: pointer;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
-.imagen-port .comi {
-    color:#ff3c00;
-    font-size: 50px;
+.imagen-port .comi{
+    color:rgba(0, 0, 0, 0);
+    font-size: 25px;
     text-align: center;
-    margin-bottom: 60px;
 }
 
 /*---Clientes---*/
