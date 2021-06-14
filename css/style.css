@@ -118,11 +118,6 @@ header .textos-header{
     cursor: pointer;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
-.imagen-port .comi {
-    color:#0000;
-    font-size: 50px;
-    text-align: center;
-}
 
 /*---Clientes---*/
 .cards{
