@@ -110,13 +110,14 @@ header .textos-header{
     flex-wrap: wrap;
 }
 .imagen-port{
-    width: 100%;
+    width: 24%;
     margin-bottom: 10px;
     height: 150px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    font-size: medium;
 }
 .hover-galeria{
     position: absolute;
