@@ -15,7 +15,7 @@
 /*----Header----*/
 header{
     width: 100%;
-    height: 625px;
+    height: 600px;
     background: #ff5f6cab;  
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ffc471da, #ff5f6cda), url(../img/portada.jpg);  
