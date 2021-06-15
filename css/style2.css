@@ -18,9 +18,9 @@ header{
     height: 600px;
     background: #ff5f6cab;  
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffc471da, #ff5f6cda), url(../img/portada.jpg);  
+    background: -webkit-linear-gradient(to right, #ffc471da, #ff5f6cda);  
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffc471da, #ff5f6cda), url(../img/portada.jpg); 
+    background: linear-gradient(to right, #ffc471da, #ff5f6cda); 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -55,20 +55,9 @@ header .formulario{
 /*---Footer---*/
 footer{
     background: #ebb68544;
-    padding: 40px 0 30px 0;
+    padding: 20px 0 10px 0;
     margin: auto;
     overflow: hidden;
-}
-.contenido-footer{
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding: 50px;
-    border-bottom: 3px solid rgb(5, 5, 5);
-}
-.content-foo{
-    text-align: center;
 }
 .titulo-final{
     text-align: center;
