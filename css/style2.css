@@ -44,10 +44,9 @@ nav > a:hover{
     text-decoration: underline;
 }
 header .formulario{
-    width: 100%;
-    align-items: center;
     justify-content: center;
     text-align: center;
+    color:rgb(253, 253, 253);
 }
 /*---Footer---*/
 footer{
