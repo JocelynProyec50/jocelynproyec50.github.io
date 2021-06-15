@@ -3,15 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.formulario{
-    background:rgb(253, 253, 253);
-    width: 100%;
-    max-width: 550px;
-    margin: auto;
-    color: orangered;
-    border-radius: 5px;
-    padding: 40px;
-}
 /*----Header----*/
 header{
     width: 100%;
