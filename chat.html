@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chat</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style1.css">
     <!-- Carga el núcleo de Firebase JS SDK -->
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
     <!-- Agrega el manejo de autenticación. -->
@@ -16,6 +16,7 @@
     <script src="js/init1.js"></script>
   </head>
   <body>
+    <header>
         <nav>
             <a href="./index.html" id="a">Inicio</a>
             <a href="./orden.html" id="i">Ordene aquí</a>
@@ -142,5 +143,6 @@
         return (texto || "").replace(/[&<>"']/g, letra => codMap.get(letra));
       }
     </script>
+      <header>
   </body>
 </html>
