@@ -15,15 +15,24 @@
     src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js">
     </script>
     <script src="js/init1.js"></script>
-    
   </head>
   <body>
-    <h1>Chat</h1>
+    <header>
+        <nav>
+            <a href="./index.html" id="a">Inicio</a>
+            <a href="./orden.html" id="i">Ordene aquí</a>
+            <a href="./usuario.html">Usuarios</a>
+        </nav>
+      <h1 class="formulario">Platique con otros Usuarios</h1> <br><br>
     <form action="javascript:agrega();">
       <input id="texto" type="text" required placeholder="Mensaje">
       <button>Enviar</button>
     </form>
     <ol id="mensajes"><li><progress max="100">Cargando…</progress></li></ol>
+      <br><br>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M-9.12,36.02 C154.91,238.31 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+</header>
     <script>
       /** Conexión al sistema de autenticación de Firebase. */
       // @ts-ignore
