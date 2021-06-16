@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style1.css">
-    !-- Carga el núcleo de Firebase JS SDK -->
+    <!-- Carga el núcleo de Firebase JS SDK -->
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
     <!-- Agrega el manejo de autenticación -->
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
@@ -22,7 +22,6 @@
         </nav>
         <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
             <path d="M-9.12,36.02 C154.91,238.31 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
-    </header>
     <h1>Platique con otros Usuarios</h1>
     <form action="javascript:agrega();">
       <input id="texto" type="text" required placeholder="Mensaje">
@@ -113,5 +112,6 @@
         return (texto || "").replace(/[&<>"']/g, letra => codMap.get(letra));
       }
    </script> 
+        </header>
 </body>
 </html>
