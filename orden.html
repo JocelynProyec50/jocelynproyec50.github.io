@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!DOCTYPE html>
-<html lang="es">
-<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +9,8 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
     <!-- Agrega el manejo de autenticación -->
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
-    <script src="js/init.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"> </script>
+    <script src="js/init1.js"></script>
     <title>Ordene su pedido aquí</title>
 </head>
 <body>
@@ -22,20 +20,17 @@
             <a href="./chat.html">Chat</a>
             <a href="./usuario.html">Usuarios</a>
         </nav>
+        <h1>Orden</h1>
        <div class="formulario">
-            <h2>Iniciar sesión con Google</h2>
-            <form action="">
-                <input type="text" placeholder="Usuario" required>
-                <input type="password" placeholder="Contraseña" required>
-                <input type="submit" value="Iniciar Sesión">
-            </form>
-            <br> <br> <br>
-            <div class="reset-password">
-                <a href="">Olvide mi contraseña</a>
-            </div>
+           <a href="ordene-pedido.html"> Cancelar </a>
+           <button> Guardar </button>
+           <button name="eliminar" type="button"> Eliminar </button>
         </div>
         <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
             <path d="M-9.12,36.02 C154.91,238.31 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+         <footer>
+            <h3 class="titulo-final">&copy; Garduño Rebollar Lizeth Jocelyn  ||  2021</h3>
+          </footer>
     </header>
 </body>
 </html>
