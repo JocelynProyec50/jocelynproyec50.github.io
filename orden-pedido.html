@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style1.css">
+    <!-- Carga el núcleo de Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <!-- Agrega el manejo de autenticación -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"> </script>
+    <script src="js/init1.js"></script>
+    <title>Ordene su pedido aquí</title>
+</head>
+<body>
+  <header>
+    <h1>Ordenes</h1>
+       <div class="formulario">
+           <a href="ordenNueva.html"> Agregar... </a>
+        </div>
+        <ul id="mensajes">
+          <li>
+            <progress max="100">Cargando…</progress>
+          </li>
+        </ul>
+        <footer>
+            <h3 class="titulo-final">&copy; Garduño Rebollar Lizeth Jocelyn  ||  2021</h3>
+          </footer>
+  </header>
+      <script src="js/ctrlOrden.js"></script>
+ </body>
+</html>
