@@ -24,11 +24,13 @@ async funtion guarda (evt){
       new FormData(forma);
     const nombre=getString(formData,"nombre").trim();
     const telefono=getString(formData,"telefono").trim();
+    const orden=getString(formData,"orden").trim();
     const fecha=getString(formData,"fecha").trim();
     
     const modelo = {
       nombre,
       telefono,
+      orden,
       fecha
     };
     await daoOrden.
