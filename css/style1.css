@@ -35,6 +35,9 @@ nav > a{
 nav > a:hover{
     text-decoration: underline;
 }
+.boton{
+    text-align: right;
+}
 .formulario{
     text-align: center;
     color:rgb(253, 253, 253);
