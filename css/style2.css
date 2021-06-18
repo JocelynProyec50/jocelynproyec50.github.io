@@ -30,3 +30,8 @@ body {
     color:rgb(255, 68, 0);
     font-size: 200%;
 }
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+}
