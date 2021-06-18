@@ -7,21 +7,18 @@ import{
   muestraError
 }
 import{
-  muestaOrdenes
+  muestraClientes
 }
-const daoOrden=
- getFirestore().
-  collection("Orden");
-const forma=document("forma");
-getAuth().onAuthStateChanged(
-  protege, muestraError);
+
+const daoCliente= getFirestore().collection("Orden");
+const forma= document["forma"];
+getAuth().onAuthStateChanged(protege, muestraError);
 
 /** @param {Event} evt */
 async funtion guarda (evt){
   try{
     evt.preventDefault();
-    const formData=
-      new FormData(forma);
+    const formData= new FormData(forma);
     const nombre=getString(formData,"nombre").trim();
     const telefono=getString(formData,"telefono").trim();
     const orden=getString(formData,"orden").trim();
@@ -33,9 +30,8 @@ async funtion guarda (evt){
       orden,
       fecha
     };
-    await daoOrden.
-    add(modelo);
-    muestraOrdenes ();
+    await daoCliente.add(modelo);
+    muestraClientes ();
   } catch (e) {
     muestraError(e);
   }
