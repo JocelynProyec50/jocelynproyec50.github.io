@@ -40,3 +40,8 @@ nav > a:hover{
     color:rgb(253, 253, 253);
     font-size: 200%;
 }
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+}
