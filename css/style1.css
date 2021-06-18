@@ -40,12 +40,12 @@ nav > a:hover{
     color:rgb(253, 253, 253);
     font-size: 200%;
 }
-.sec{
+.form{
     color:rgb(255, 68, 0);
     font-size: 150%;
 }
 .caja{
-    font-size: 100%;
+    font-size: 50%;
     margin: 20px 0 0 0;
 }
 .titulo-final{
