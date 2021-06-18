@@ -41,10 +41,11 @@ nav > a:hover{
     font-size: 200%;
 }
 .sec{
-    font-size: 100%;
+    color:rgb(255, 68, 0);
+    font-size: 150%;
 }
 .caja{
-    font-size: 80px;
+    font-size: 100%;
     margin: 20px 0 0 0;
 }
 .titulo-final{
