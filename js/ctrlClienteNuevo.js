@@ -15,8 +15,8 @@ const forma= document["forma"];
 getAuth().onAuthStateChanged(protege, muestraError);
 
 /** @param {Event} evt */
-async funtion guarda (evt){
-  try{
+async function guarda (evt) {
+  try {
     evt.preventDefault();
     const formData= new FormData(forma);
     const nombre=getString(formData,"nombre").trim();
@@ -31,7 +31,7 @@ async funtion guarda (evt){
       fecha
     };
     await daoCliente.add(modelo);
-    muestraClientes ();
+    muestraClientes();
   } catch (e) {
     muestraError(e);
   }
