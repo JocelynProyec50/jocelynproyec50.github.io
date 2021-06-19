@@ -13,39 +13,40 @@ import{
 const daoCliente = getFirestore().collection("Cliente");
 const params = new URL (location.href).searchParams;
 const id= params.get("id");
-const forma= document ["forma"];
+const forma= document["forma"];
 
 getAuth().onAuthStateChanged(protege, muestraError);
 
-async function busca(){
-  try{
+async function busca() {
+  try {
     const doc= await daoCliente.doc(id).get();
-    if (doc.exists){
+    if (doc.exists) {
       const data= doc.data();
-      forma.nombre.value=data.nombre || "";
-      forma.telefono.value=data.telefono || "";
-      forma.orden.value=data.orden || "";
-      forma.fecha.value=data.fecha || "";
-      forma.addEventListener("submit",guarda);
-      forma.eliminar.addEventListener("click",elimina);
+      forma.nombre.value= data.nombre;
+      forma.telefono.value= data.telefono || "";
+      forma.orden.value= data.orden || "";
+      forma.fecha.value= data.fecha || "";
+      forma.addEventListener("submit", guarda);
+      forma.eliminar.addEventListener("click", elimina);
     } else {
-      throw new Error(" No se encontró. ");
+      throw new Error("No se encontró.");
     }
-  } catch (e){
+  } catch (e) {
     muestraError(e);
     muestraClientes();
   }
 }
-async function guarda(evt){
-  try{
+
+async function guarda(evt) {
+  try {
     evt.preventDefault();
     const formData= new FormData(forma);
-    const nombre = getString(formData,"nombre").trim();
-    const telefono = getString(formData,"telefono").trim();
-    const orden = getString(formData,"orden").trim();
-    const fecha = getString(formData,"fecha").trim();
+    const nombre = getString(formData, "nombre").trim();
+    const telefono = getString(formData, "telefono").trim();
+    const orden = getString(formData, "orden").trim();
+    const fecha = getString(formData, "fecha").trim();
     
-    const modelo={
+    const modelo = {
       nombre,
       telefono,
       orden,
@@ -58,8 +59,8 @@ async function guarda(evt){
   }
 }
 
-async function elimina(){
-  try{
+async function elimina() {
+  try {
     if (confirm("Confirmar la " + "eliminación")){
       await daoCliente.doc(id).delete();
       muestraClientes();
