@@ -1,9 +1,22 @@
+import{
+  getAuth,
+  getFirestore
+}
+import{
+  getString,
+  muestraError
+}
+import{
+  muestraClientes
+}
+
 const daoCliente = getFirestore().collection("Cliente");
-const params = new URL (location.href). searchParams;
+const params = new URL (location.href).searchParams;
 const id= params.get("id");
 const forma= document ["forma"];
 
 getAuth().onAuthStateChanged(protege, muestraError);
+
 async function busca(){
   try{
     const doc= await daoCliente.doc(id).get();
@@ -26,8 +39,7 @@ async function busca(){
 async function guarda(evt){
   try{
     evt.preventDefault();
-    const formData=
-      new FormData(forma);
+    const formData= new FormData(forma);
     const nombre = getString(formData,"nombre").trim();
     const telefono = getString(formData,"telefono").trim();
     const orden = getString(formData,"orden").trim();
@@ -39,7 +51,8 @@ async function guarda(evt){
       orden,
       fecha
     };
-    await daoAlumno.doc(id).set(modelo);
+    await daoCliente.doc(id).set(modelo);
+    muestraClientes();
   } catch (e) {
     muestraError(e);
   }
