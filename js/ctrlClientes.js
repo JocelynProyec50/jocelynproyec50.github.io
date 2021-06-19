@@ -1,8 +1,8 @@
-import{
+import {
   getAuth,
   getFirestore
 }
-import{
+import {
   cod,
   muestraError
 }
@@ -26,21 +26,21 @@ funtion htmlLista(snap) {
   lista.innerHTML=html;
 }
 
-function htmlFila(doc){
-const data=doc.data();
-const orden=cod(data.orden);
-const nombre=cod(data.nombre);
-var fsf=cod(data.fecha);
-var fecha=new Date(fsf);
-var espacio="[     -     ]";
-var dformat=[fecha.getDate()+1, fecha.getMonth()+1, fecha.getFullYear()].join(' / ');
+function htmlFila(doc) {
+const data= doc.data();
+const orden= cod(data.orden);
+const nombre= cod(data.nombre);
+var fsf= cod(data.fecha);
+var fecha= new Date(fsf);
+var espacio= "[     -     ]";
+var dformat= [fecha.getDate()+1, fecha.getMonth()+1, fecha.getFullYear()].join(' / ');
 const parametros= new URLSearchParams();
 parametros.append("id",doc.id);
 return (
-  ´<li>
+  `<li>
     <a class="fila" href="cliente.html?${parametros}">
     <strong class="primario">
       ${orden} ${nombre} ${dformat}
     </strong>
-  </li>´);
+  </li>`);
 }
