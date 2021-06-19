@@ -24,7 +24,7 @@ funtion htmlLista(snap){
   if (snap.size > 0){
     snap.forEach(doc => html += htmlFila(doc));
   } else {
-    html += '<li class="vacio"> --- No hay registros. --- </li>'
+    html += <li class="vacio"> '--- No hay registros. ---' </li>
   }
   lista.innerHTML=html;
 }
