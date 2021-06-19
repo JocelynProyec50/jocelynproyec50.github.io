@@ -3,28 +3,25 @@ import{
   getFirestore
 }
 import{
-  getString,
+  cod,
   muestraError
-}
-import{
-  muestraClientes
 }
 
 const lista= document.querySelector("#lista");
 const daoCliente= getFirestore().collection("Cliente");
 
-getAuth().onAuthStateChanged(protege,muestraError);
+getAuth().onAuthStateChanged(protege, muestraError);
 
-funtion consulta(){
+funtion consulta() {
   daoCliente.orderBy("nombre").onSnapshot(htmlLista, errConsulta);
 }
       
-funtion htmlLista(snap){
-  let html="";
-  if (snap.size > 0){
+funtion htmlLista(snap) {
+  let html = "";
+  if (snap.size > 0) {
     snap.forEach(doc => html += htmlFila(doc));
   } else {
-    html += <li class="vacio"> '--- No hay registros. ---' </li>
+    html += `<li class="vacio"> --- No hay registros. --- </li>`;
   }
   lista.innerHTML=html;
 }
