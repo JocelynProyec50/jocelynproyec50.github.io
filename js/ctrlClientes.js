@@ -42,5 +42,6 @@ return (
     <strong class="primario">
       ${orden} ${nombre} ${dformat}
     </strong>
+    </a>
   </li>`);
 }
