@@ -57,7 +57,7 @@ nav > a:hover{
 }
 header .formulario{
     display:flex;
-    height: 450px;
+    height: 400px;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -86,9 +86,9 @@ header .formulario{
     border: none;
     border-radius: 2px;
     border-bottom: 5px solid rgba(255, 68, 0, 0.493);
-    font-size: 14px;
+    font-size: 10x;
     font-weight: normal;
-    margin: 0 0 15px 0;
+    margin: 0 0 5px 0;
 }
 .formulario input[type="text"]:focus,
 .formulario input[type="date"]:focus{
@@ -102,7 +102,7 @@ header .formulario{
     padding: 10px 0;
     font-weight: normal;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 }
 .formulario button[type="submit"]:hover{
@@ -112,5 +112,5 @@ header .formulario{
 .titulo-final{
     text-align: center;
     font-size: 20px;
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
 }
