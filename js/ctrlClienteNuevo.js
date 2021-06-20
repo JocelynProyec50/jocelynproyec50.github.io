@@ -1,4 +1,14 @@
-
+import{
+  getAuth,
+  getFirestore
+}
+import{
+  getString,
+  muestraError
+}
+import{
+  muestraClientes
+}
 
 const daoCliente= getFirestore().collection("Orden");
 const forma= document["forma"];
