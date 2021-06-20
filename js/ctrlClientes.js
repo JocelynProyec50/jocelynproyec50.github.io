@@ -47,3 +47,8 @@ function htmlFila(doc) {
     </a>
   </li>`);
 }
+
+function errConsulta(e) {
+  muestraError(e);
+  consulta();
+}
