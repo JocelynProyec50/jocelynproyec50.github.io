@@ -17,16 +17,16 @@ getAuth().onAuthStateChanged(
   protege, muestraError);
 
 /** @param {Event} evt */
-async function guarda() {
-  try {
-    firestore.collection("CLIENTE").add({
+function guarda() {
+      firestore.collection("CLIENTE").add({
           NOMBRE: nombre.value.trim(),
           // @ts-ignore
           TELÉFONO: telefono.value.trim(),
-      ORDEN: orden.value.trim(),
+          ORDEN: orden.value.trim(),
           // @ts-ignore
           FECHA: firebase.firestore.FieldValue.serverTimestamp()
         });
+  try {
     const formData= new FormData(forma);
     const nombre=getString(formData,"nombre").trim();
     const telefono=getString(formData,"telefono").trim();
