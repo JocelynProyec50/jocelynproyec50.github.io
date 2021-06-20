@@ -38,11 +38,6 @@ nav > a{
 nav > a:hover{
     text-decoration: underline;
 }
-.formulario{
-    text-align: center;
-    color:rgb(253, 253, 253);
-    font-size: 200%;
-}
 .form{
     color:rgb(0, 0, 0);
     font-size: 200%;
@@ -74,6 +69,11 @@ header .formulario{
     font-size: 40px;
     font-weight: 400;
     line-height: 1;
+    background: orangered
+}
+.formulario .a{
+    margin: 0 0 30px 0 ;
+    font-size: 30px;
     background: orangered
 }
 .formulario input[type="text"],
