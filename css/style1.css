@@ -2,10 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    box-sizing: border-box;
-    box-sizing: border-box;
-    box-sizing: border-box;
-    
 }
 /*----Header----*/
 header{
@@ -49,11 +45,11 @@ nav > a:hover{
 .formulario{
     background:rgb(253, 253, 253);
     width: 100%;
-    max-width: 550px;
+    max-width: 50px;
     margin: auto;
     color: orangered;
     border-radius: 5px;
-    padding: 25px;
+    padding: 15px;
 }
 header .formulario{
     display:flex;
@@ -65,11 +61,10 @@ header .formulario{
     text-align: center;
 }
 .formulario h2{
-    margin: 30px 0 0 0 ;
-    font-size: 40px;
+    margin: 30px 0 30px 0 ;
+    font-size: 30px;
     font-weight: 400;
     line-height: 1;
-    background: orangered
 }
 .formulario .a{
     margin: 0 0 30px 0 ;
