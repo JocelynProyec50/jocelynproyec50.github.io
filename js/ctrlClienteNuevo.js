@@ -33,7 +33,7 @@ async function guarda(evt) {
       fecha
     };
     await daoCliente.
-      add(modelo);
+      update(modelo);
     muestraClientes();
   } catch (e) {
     muestraError(e);
