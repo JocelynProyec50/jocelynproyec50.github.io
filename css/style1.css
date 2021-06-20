@@ -72,8 +72,11 @@ header .formulario{
 .formulario .a{
     margin: 0 0 30px 0 ;
     font-size: 20px;
-    color: orangered;
+    color: rgba(255, 68, 0, 0.562);
     text-align: right;
+    font-weight: 1000;
+    text-decoration: none;
+    margin-right: 30px;
 }
 .formulario input[type="text"],
 .formulario input[type="date"]{
