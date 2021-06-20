@@ -7,7 +7,7 @@ import {
   muestraError
 } from "../lib/util.js";
 import {
-  muestraPasatiempos
+  muestraClientes
 } from "./navegacion.js";
 
 const daoCliente = getFirestore().collection("Cliente");
