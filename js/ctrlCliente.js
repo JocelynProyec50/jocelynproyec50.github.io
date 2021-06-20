@@ -1,19 +1,19 @@
-import{
+import {
   getAuth,
   getFirestore
-}
-import{
+} from "../lib/fabrica.js";
+import {
   getString,
   muestraError
-}
-import{
-  muestraClientes
-}
+} from "../lib/util.js";
+import {
+  muestraPasatiempos
+} from "./navegacion.js";
 
 const daoCliente = getFirestore().collection("Cliente");
 const params = new URL (location.href).searchParams;
-const id= params.get("id");
-const forma= document["forma"];
+const id = params.get("id");
+const forma = document["forma"];
 
 getAuth().onAuthStateChanged(protege, muestraError);
 
@@ -21,8 +21,8 @@ async function busca() {
   try {
     const doc= await daoCliente.doc(id).get();
     if (doc.exists) {
-      const data= doc.data();
-      forma.nombre.value= data.nombre;
+      const data = doc.data();
+      forma.nombre.value= data.nombre || "";
       forma.telefono.value= data.telefono || "";
       forma.orden.value= data.orden || "";
       forma.fecha.value= data.fecha || "";
@@ -61,7 +61,7 @@ async function guarda(evt) {
 
 async function elimina() {
   try {
-    if (confirm("Confirmar la " + "eliminación")){
+    if (confirm("Confirmar la " + "eliminación")) {
       await daoCliente.doc(id).delete();
       muestraClientes();
     }
