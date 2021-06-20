@@ -1,11 +1,3 @@
-import {
-  getAuth,
-  getFirestore
-}
-import {
-  cod,
-  muestraError
-}
 
 const lista= document.querySelector("#lista");
 const daoCliente= getFirestore().collection("Cliente");
