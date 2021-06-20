@@ -8,7 +8,7 @@ import {
 } from "../lib/util.js";
 
 const lista = document.querySelector("#lista");
-const daoCliente = getFirestore().collection("CLIENTE");
+const daoCliente = getFirestore().collection("Cliente");
 
 getAuth().onAuthStateChanged(protege, muestraError);
 
