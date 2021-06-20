@@ -49,6 +49,62 @@ nav > a:hover{
     font-size: 90%;
     margin: 20px 0 0 0;
 }
+header .formulario{
+    display:flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.formulario h2{
+    margin: 0 0 30px 0 ;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    background: orangered
+}
+.formulario input[type="text"],
+.formulario input[type="date"]{
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: rgba(0, 0, 0, 0.726);
+    border: none;
+    border-radius: 2px;
+    border-bottom: 5px solid rgba(255, 68, 0, 0.493);
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 30px 0;
+}
+.formulario input[type="text"]:focus,
+.formulario input[type="date"]:focus{
+    border-bottom: 5px solid rgba(255, 68, 0, 0.925);
+}
+.formulario button[type="submit"]{
+    background: rgba(255, 68, 0, 0.726);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.formulario button[type="submit"]:hover{
+    background: orangered;
+}
+.formulario .reset-password{
+    background: rgba(255, 68, 0, 0.562);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
 .titulo-final{
     text-align: center;
     font-size: 20px;
