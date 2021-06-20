@@ -45,7 +45,7 @@ nav > a:hover{
 .formulario{
     background:rgb(253, 253, 253);
     width: 100%;
-    max-width: 50px;
+    max-width: 500px;
     margin: auto;
     color: orangered;
     border-radius: 5px;
