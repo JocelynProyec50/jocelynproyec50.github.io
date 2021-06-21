@@ -17,7 +17,7 @@ getAuth().onAuthStateChanged(
   protege, muestraError);
 
 /** @param {Event} evt */
-function guarda(evt) {
+function guarda() {
   try {
     evt.preventDefault();
     const formData= new FormData(forma);
