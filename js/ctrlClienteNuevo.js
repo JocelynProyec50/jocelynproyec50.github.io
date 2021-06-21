@@ -32,8 +32,7 @@ function guarda(evt) {
       orden,
       fecha
     };
-    await daoCliente.
-      update(modelo);
+    firestore.collection("Cliente").set(modelo)
     muestraClientes();
   } catch (e) {
     muestraError(e);
