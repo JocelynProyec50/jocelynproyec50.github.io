@@ -17,7 +17,7 @@ getAuth().onAuthStateChanged(
   protege, muestraError);
 
 /** @param {Event} evt */
-function guarda() {
+function guarda(evt) {
   try {
     evt.preventDefault();
     const formData= new FormData(forma);
@@ -32,13 +32,8 @@ function guarda() {
       orden,
       fecha
     };
-    firestore.collection("Cliente").add({
-    nombre:nombre,
-    telefono:telefono,
-      orden:orden,
-      fecha:fecha
-    
-    });
+    await daoCliente.
+      add(modelo);
     muestraClientes();
   } catch (e) {
     muestraError(e);
