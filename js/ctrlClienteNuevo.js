@@ -32,7 +32,13 @@ function guarda() {
       orden,
       fecha
     };
-    firestore.collection("Cliente").set(modelo)
+    firestore.collection("Cliente").add({
+    nombre:nombre,
+    telefono:telefono,
+      orden:orden,
+      fecha:fecha
+    
+    });
     muestraClientes();
   } catch (e) {
     muestraError(e);
